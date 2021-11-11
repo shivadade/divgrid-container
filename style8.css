@@ -1,0 +1,55 @@
+   #header{
+       background-color:blue;
+       padding:25px;
+       grid-area:"header";
+   }
+   #menu{
+       background-color:blueviolet;
+       padding:25px;
+       grid-area:"menu";
+   }
+   #main{
+       background-color:chartreuse;
+       pading:25px;
+       height:500px;
+       grid-area:"main";
+   }
+   #right{
+       background-color:darkgoldenrod;
+       padiing:25px;
+       grid-area:"right";
+   }
+   #footer{
+       background-color:darkred;
+       padding:25px;
+       height:500px;
+       grid-area:"footer";
+   }
+   #grid-container{
+       display:grid;
+       grid-template-areas:
+       'header header header header header header'
+       'menu menu menu menu menu right'
+       'right right right right right right'
+       'footer footer footer footer footer footer'
+       grid-space;12px;
+   }
+   @media(max-width:1000px);{
+    #grid-container{
+        grid-template-areas:
+        'header header header header header header'
+        'menu menu menu menu menu right'
+        'right right right right right right'
+        'footer footer footer footer footer footer'
+    }
+   }
+   @media(max-width:500px);{
+    #grid-container{
+        grid-template-areas:
+        'header header header header header header'
+        'menu menu menu menu menu right'
+        'right right right right right right'
+        'footer footer footer footer footer footer'
+    }
+}
+   
